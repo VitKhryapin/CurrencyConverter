@@ -15,6 +15,13 @@
 		FB418BD527A2821500ED15FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB418BD327A2821500ED15FF /* LaunchScreen.storyboard */; };
 		FB418BE027A2821500ED15FF /* CurrencyConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB418BDF27A2821500ED15FF /* CurrencyConverterTests.swift */; };
 		FB418BEB27A2821500ED15FF /* CurrencyConverterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB418BEA27A2821500ED15FF /* CurrencyConverterUITests.swift */; };
+		FB418BFB27A3CFE300ED15FF /* ShadowLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB418BFA27A3CFE300ED15FF /* ShadowLabel.swift */; };
+		FB418BFD27A3D33A00ED15FF /* Ellipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB418BFC27A3D33A00ED15FF /* Ellipse.swift */; };
+		FB418BFF27A3D6F800ED15FF /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB418BFE27A3D6F800ED15FF /* ButtonView.swift */; };
+		FB418C0127A3FC4100ED15FF /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB418C0027A3FC4100ED15FF /* Data.swift */; };
+		FB418C0327A41B4F00ED15FF /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB418C0227A41B4F00ED15FF /* NetworkManager.swift */; };
+		FB418C0527A92C4900ED15FF /* RefreshManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB418C0427A92C4900ED15FF /* RefreshManager.swift */; };
+		FB418C0B27ABD23700ED15FF /* OtherCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB418C0A27ABD23700ED15FF /* OtherCurrency.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,13 @@
 		FB418BE627A2821500ED15FF /* CurrencyConverterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurrencyConverterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB418BEA27A2821500ED15FF /* CurrencyConverterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterUITests.swift; sourceTree = "<group>"; };
 		FB418BEC27A2821500ED15FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB418BFA27A3CFE300ED15FF /* ShadowLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowLabel.swift; sourceTree = "<group>"; };
+		FB418BFC27A3D33A00ED15FF /* Ellipse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ellipse.swift; sourceTree = "<group>"; };
+		FB418BFE27A3D6F800ED15FF /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		FB418C0027A3FC4100ED15FF /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		FB418C0227A41B4F00ED15FF /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		FB418C0427A92C4900ED15FF /* RefreshManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshManager.swift; sourceTree = "<group>"; };
+		FB418C0A27ABD23700ED15FF /* OtherCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherCurrency.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +116,13 @@
 				FB418BC827A2821300ED15FF /* AppDelegate.swift */,
 				FB418BCA27A2821300ED15FF /* SceneDelegate.swift */,
 				FB418BCC27A2821300ED15FF /* ViewController.swift */,
+				FB418C0A27ABD23700ED15FF /* OtherCurrency.swift */,
+				FB418C0427A92C4900ED15FF /* RefreshManager.swift */,
+				FB418C0227A41B4F00ED15FF /* NetworkManager.swift */,
+				FB418C0027A3FC4100ED15FF /* Data.swift */,
+				FB418BFC27A3D33A00ED15FF /* Ellipse.swift */,
+				FB418BFE27A3D6F800ED15FF /* ButtonView.swift */,
+				FB418BFA27A3CFE300ED15FF /* ShadowLabel.swift */,
 				FB418BCE27A2821300ED15FF /* Main.storyboard */,
 				FB418BD127A2821500ED15FF /* Assets.xcassets */,
 				FB418BD327A2821500ED15FF /* LaunchScreen.storyboard */,
@@ -258,9 +279,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB418C0527A92C4900ED15FF /* RefreshManager.swift in Sources */,
+				FB418C0127A3FC4100ED15FF /* Data.swift in Sources */,
+				FB418BFF27A3D6F800ED15FF /* ButtonView.swift in Sources */,
 				FB418BCD27A2821300ED15FF /* ViewController.swift in Sources */,
 				FB418BC927A2821300ED15FF /* AppDelegate.swift in Sources */,
+				FB418C0327A41B4F00ED15FF /* NetworkManager.swift in Sources */,
+				FB418BFD27A3D33A00ED15FF /* Ellipse.swift in Sources */,
+				FB418BFB27A3CFE300ED15FF /* ShadowLabel.swift in Sources */,
 				FB418BCB27A2821300ED15FF /* SceneDelegate.swift in Sources */,
+				FB418C0B27ABD23700ED15FF /* OtherCurrency.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +467,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DVBMX6UX88;
 				INFOPLIST_FILE = CurrencyConverter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,6 +487,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DVBMX6UX88;
 				INFOPLIST_FILE = CurrencyConverter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
