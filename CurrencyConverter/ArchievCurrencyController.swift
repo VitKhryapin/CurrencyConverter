@@ -1,5 +1,5 @@
 //
-//  OtherCurrency.swift
+//  ArchievCurrencyController.swift
 //  CurrencyConverter
 //
 //  Created by Vitaly Khryapin on 03.02.2022.
@@ -7,14 +7,13 @@
 import Foundation
 import UIKit
 
-class OtherCurrency: UITableViewController {
+class ArchievCurrencyController: UITableViewController {
     @IBOutlet weak var searchBarOutlet: UISearchBar!
     @IBOutlet weak var dateOutlet: UIBarButtonItem!
     var currencyArchiev = CurrencyArchiev()
     var dataSource = [Rate]()
     var dictionary: [String.Element : [Rate]] = [:]
     var dictKeys = [Dictionary<String.Element, [Rate]>.Keys.Element]()
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

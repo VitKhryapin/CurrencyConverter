@@ -14,7 +14,7 @@ enum ObtainResult {
 class NetworkManager {
     let session = URLSession.shared
     let decoder = JSONDecoder()
-    var dataSource = [Currency]()
+    //var dataSource = [Currency]()
     func currency (completion: @escaping (ObtainResult) -> Void) {
         guard let url = URL(string: "https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5") else { return }
         session.dataTask(with: url) { [weak self] data, response, error in

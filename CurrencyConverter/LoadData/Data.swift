@@ -7,6 +7,9 @@
 
 import Foundation
 
+
+    
+
 struct Currency: Codable {
     var currency: String
     var baseCurrency: String
@@ -19,8 +22,12 @@ struct Currency: Codable {
         case buy
         case sale
     }
-}
 
+    
+    
+    
+    
+}
 struct Rate: Codable {
     var baseCurrency: String
     var currency: String

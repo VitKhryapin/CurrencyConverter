@@ -11,13 +11,16 @@ import XCTest
 class CurrencyConverterTests: XCTestCase {
     var vc: ViewController!
     var nm = NetworkManager()
-    var oc = OtherCurrency()
+    var ac = ArchievCurrencyController()
+    var oc = OtherCurrencController()
     
     override func setUp() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         vc = storyboard.instantiateViewController(withIdentifier: "ViewController") as? ViewController
         vc.loadViewIfNeeded()
-        oc = (storyboard.instantiateViewController(withIdentifier: "OtherCurrency") as? OtherCurrency)!
+        ac = (storyboard.instantiateViewController(withIdentifier: "ArchievCurrencyController") as? ArchievCurrencyController)!
+        ac.loadViewIfNeeded()
+        oc = (storyboard.instantiateViewController(withIdentifier: "OtherCurrencController") as? OtherCurrencController)!
         oc.loadViewIfNeeded()
     }
     
@@ -27,42 +30,30 @@ class CurrencyConverterTests: XCTestCase {
     
     func testSetDefaults() throws {
         let expectation = expectation(description: "Expectation in " + #function)
-        vc.currency()
+        vc.updateCurrency()
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
             expectation.fulfill()
         })
         waitForExpectations(timeout: 3, handler: nil)
-        if let result = self.vc.defaults.value(forKey: "saleEuro") {
-            XCTAssertNotNil(result)
-        }
-        if let result = self.vc.defaults.value(forKey: "saleRub") {
+        if let result = self.vc.defaults.value(forKey: "currencyArray") {
             XCTAssertNotNil(result)
         }
     }
     
-    func testTextFieldAreConnected() throws {
-        _ = try XCTUnwrap(vc.tfUSDOutlet , "The Text to reverse UITextField is not connected")
-        _ = try XCTUnwrap(vc.tfEUROutlet , "The Text to reverse UITextField is not connected")
-        _ = try XCTUnwrap(vc.tfRUBOutlet , "The Text to reverse UITextField is not connected")
-        
-    }
     
-    func testExcludeNumberTF() throws {
-        vc.tfUSDOutlet.text = "asd12.sd3"
-        let resultTest = "12.3"
-        vc.changedExcludeLetterTF(vc.tfUSDOutlet)
-        XCTAssertEqual(resultTest, vc.tfUSDOutlet.text)
+    func testArchievCurrency() throws {
+        let expectation = expectation(description: "Expectation in " + #function)
+        ac.updateArchiev(date: "01.12.2014")
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
+            expectation.fulfill()
+        })
+        waitForExpectations(timeout: 3, handler: nil)
+        XCTAssertNotNil(ac.dataSource)
     }
     
     func testOtherCurrency() throws {
-        
-        let expectation = expectation(description: "Expectation in " + #function)
-        oc.updateArchiev(date: "01.12.2014")
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
-            expectation.fulfill()
-        })
-        waitForExpectations(timeout: 3, handler: nil)
-        XCTAssertNotNil(oc.dataSource)
+        let cell = oc.tableView.numberOfRows(inSection: 0)
+        XCTAssertEqual(vc.currencyArray.count, cell)
     }
     
     

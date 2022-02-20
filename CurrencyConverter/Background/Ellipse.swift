@@ -9,6 +9,12 @@ import Foundation
 import UIKit
 
 class Ellipse: UILabel {
+    func createEllipse(_ view: UIView) {
+        ellipseVeryLightBlue(view)
+        ellipseLightBlue(view)
+        ellipseBlue(view)
+    }
+    
     func ellipseBlue (_ view: UIView) {
         let ellipseBlue = UILabel()
         ellipseBlue.layer.backgroundColor = UIColor(red: 0, green: 0.478, blue: 1, alpha: 1).cgColor
