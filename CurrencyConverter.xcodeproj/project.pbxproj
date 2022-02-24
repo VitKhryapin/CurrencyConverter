@@ -10,6 +10,8 @@
 		FB16BD2327BD1E3C00338AB5 /* CurrencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB16BD2127BD1E3C00338AB5 /* CurrencyCell.swift */; };
 		FB16BD2427BD1E3C00338AB5 /* CurrencyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB16BD2227BD1E3C00338AB5 /* CurrencyCell.xib */; };
 		FB16BD2C27BF91FB00338AB5 /* OtherCurrencController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB16BD2B27BF91FB00338AB5 /* OtherCurrencController.swift */; };
+		FB16BD5E27C7D33300338AB5 /* PreviewFirst.png in Resources */ = {isa = PBXBuildFile; fileRef = FB16BD5C27C7D33300338AB5 /* PreviewFirst.png */; };
+		FB16BD5F27C7D33300338AB5 /* PreviewSecond.png in Resources */ = {isa = PBXBuildFile; fileRef = FB16BD5D27C7D33300338AB5 /* PreviewSecond.png */; };
 		FB418BC927A2821300ED15FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB418BC827A2821300ED15FF /* AppDelegate.swift */; };
 		FB418BCB27A2821300ED15FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB418BCA27A2821300ED15FF /* SceneDelegate.swift */; };
 		FB418BCD27A2821300ED15FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB418BCC27A2821300ED15FF /* ViewController.swift */; };
@@ -48,6 +50,8 @@
 		FB16BD2127BD1E3C00338AB5 /* CurrencyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCell.swift; sourceTree = "<group>"; };
 		FB16BD2227BD1E3C00338AB5 /* CurrencyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyCell.xib; sourceTree = "<group>"; };
 		FB16BD2B27BF91FB00338AB5 /* OtherCurrencController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherCurrencController.swift; sourceTree = "<group>"; };
+		FB16BD5C27C7D33300338AB5 /* PreviewFirst.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PreviewFirst.png; sourceTree = SOURCE_ROOT; };
+		FB16BD5D27C7D33300338AB5 /* PreviewSecond.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PreviewSecond.png; sourceTree = SOURCE_ROOT; };
 		FB418BC527A2821300ED15FF /* CurrencyConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrencyConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB418BC827A2821300ED15FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB418BCA27A2821300ED15FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -168,6 +172,8 @@
 				FB16BD1327BBCDDE00338AB5 /* Background */,
 				FB16BD1127BBCD1500338AB5 /* SomeFiles */,
 				FB418BD627A2821500ED15FF /* Info.plist */,
+				FB16BD5C27C7D33300338AB5 /* PreviewFirst.png */,
+				FB16BD5D27C7D33300338AB5 /* PreviewSecond.png */,
 			);
 			path = CurrencyConverter;
 			sourceTree = "<group>";
@@ -293,8 +299,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB16BD5F27C7D33300338AB5 /* PreviewSecond.png in Resources */,
 				FB418BD527A2821500ED15FF /* LaunchScreen.storyboard in Resources */,
 				FB418BD227A2821500ED15FF /* Assets.xcassets in Resources */,
+				FB16BD5E27C7D33300338AB5 /* PreviewFirst.png in Resources */,
 				FB418BD027A2821300ED15FF /* Main.storyboard in Resources */,
 				FB16BD2427BD1E3C00338AB5 /* CurrencyCell.xib in Resources */,
 			);
